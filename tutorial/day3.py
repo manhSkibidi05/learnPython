@@ -156,5 +156,31 @@ except ValueError : # lỗi được quy định bởi python
 # -> IndentationError : Thụt lề sai 
 # -> NameError : Dùng biến chưa khai báo 
 
- 
+# Review : 
+# Bài tập tạo class điểm với thuộc tính kinh độ , vĩ độ , name , category và có phương thức sử dụng để tính toán ra khoảng cách địa lý (khoảng cách đường chim bay) 
+# giữa 2 tọa độ
 
+class diem_dia_ly : 
+    def __init__(self , lat : float , lon : float , name : str , category : str ):
+        self.lat = lat 
+        self.lon = lon
+        self.name = name
+        self.category = category
+
+    def khoang_cach_dia_ly(self , lat : float , lon : float) -> float :
+        # Công thức đơn giản hóa khoảng cách giữa 2 tọa độ
+        lat_diff = math.radians(lat - self.lat)
+        lng_diff = math.radians(lon - self.lon)
+        
+        a = math.sin(lat_diff / 2)**2 + math.cos(math.radians(self.lat)) * math.cos(math.radians(lat)) * math.sin(lng_diff / 2)**2
+        c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
+        
+        radius_earth_km = 6371.0
+        return round(radius_earth_km * c, 2)
+
+
+diem_p = diem_dia_ly(21.0323 , 105.1122 , 'nhà của toi' , 'home')
+diem_k = diem_dia_ly(21.8382 , 105.9212 , 'nhà của bạn' , 'home')
+
+khoang_cach_mot = diem_p.khoang_cach_dia_ly(diem_k.lat , diem_k.lon)
+print(f"Khoảng cách giữa điểm {diem_p.name} và điểm {diem_k.name} là : {khoang_cach_mot} km")
