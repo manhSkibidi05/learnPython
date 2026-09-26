@@ -148,3 +148,8 @@ print(poly1.intersection(poly2)) # POLYGON ((2 2, 2 3, 3 3, 3 2, 2 2))
 # - Bản chất shapely là bộ máy tính toán hình học mặt phảng 2D , nó thực hiện các phép toán x, y trên mặt phẳng mà không biết hoặc tự động chuyển hệ tọa độ
 # -> Khi bạn truyền tọa độ vào shapely nó chỉ coi đó là các con số giá trị trên trục 2D xy đơn thuần 
 # -> Thư viện shapely chỉ hoạt động giữa trên toán học thuần thúy trên mặt phẳng mà không quan tâm đến : đơn vị đo , hệ tọa độ , bề mặt trái đất
+
+# - Đơn giản hóa shapely : 
+# -> Thư viện shapely cung cấp các đối tượng hình học các đối tượng này được biểu diễn trên mặt phẳng 2D , nhờ vậy việc tính toán trở nên dễ dàng với các phương thức
+# được cung cấp sẵn dùng cho tính toán như : distance() -> tính khoảng cách , buffer() -> tạo khoảng đệm xung quanh đối tượng , ...
+# -> Thư viện shapely không quan tâm tới đơn vị , hệ tọa độ chỉ quan tâm đến giá trị truyền vào là các con số từ đó tính toán ra được giá trị cần thiết 
