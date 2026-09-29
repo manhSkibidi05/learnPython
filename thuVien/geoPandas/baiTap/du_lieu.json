@@ -1,0 +1,124 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.8524,
+                    21.0285
+                ]
+            },
+            "properties": {
+                "id": "DEST_001",
+                "name": "Hồ Hoàn Kiếm",
+                "category": "Lake",
+                "city": "Hà Nội",
+                "rating": 4.7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    107.0843,
+                    20.9101
+                ]
+            },
+            "properties": {
+                "id": "DEST_002",
+                "name": "Vịnh Hạ Long",
+                "category": "Bay",
+                "city": "Quảng Ninh",
+                "rating": 4.9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    108.2022,
+                    16.0544
+                ]
+            },
+            "properties": {
+                "id": "DEST_003",
+                "name": "Bà Nà Hills",
+                "category": "Mountain",
+                "city": "Đà Nẵng",
+                "rating": 4.6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.83716982654235,
+                    21.03098466376245
+                ]
+            },
+            "properties": {
+                "id": "DEST_004",
+                "name": "Bảo tàng Mỹ thuật Việt Nam",
+                "category": "Museum",
+                "city": "Hà Nội",
+                "rating": 4.8
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    106.7009,
+                    10.7769
+                ]
+            },
+            "properties": {
+                "id": "DEST_005",
+                "name": "Chợ Bến Thành",
+                "category": "Market",
+                "city": "TP. Hồ Chí Minh",
+                "rating": 4.4
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.8432,
+                    21.0040
+                ]
+            },
+            "properties": {
+                "id": "DEST_006",
+                "name": "Bảo tàng Dân tộc học Việt Nam",
+                "category": "Museum",
+                "city": "Hà Nội",
+                "rating": 4.5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.7561090342654,
+                    21.012415197480955
+                ]
+            },
+            "properties": {
+                "id": "DEST_007",
+                "name": "Bảo tàng Lịch sử Quân sự Việt Nam",
+                "category": "Museum",
+                "city": "Hà Nội",
+                "rating": 4.9
+            }
+        }
+    ]
+}
