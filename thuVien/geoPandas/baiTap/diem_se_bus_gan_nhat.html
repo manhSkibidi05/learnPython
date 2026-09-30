@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_83732d4034dc2543b96d750493639ab4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_83732d4034dc2543b96d750493639ab4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_83732d4034dc2543b96d750493639ab4 = L.map(
+                "map_83732d4034dc2543b96d750493639ab4",
+                {
+                    center: [21.0722, 105.7741],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e2177de6e93bc73c5e2f4fb456637018 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e2177de6e93bc73c5e2f4fb456637018.addTo(map_83732d4034dc2543b96d750493639ab4);
+        
+    
+            var marker_b83f40e97f76eedfdbc941a373069e88 = L.marker(
+                [21.0722, 105.7741],
+                {
+}
+            ).addTo(map_83732d4034dc2543b96d750493639ab4);
+        
+    
+            var icon_2a35e06b26746f2376354d04b44ad95f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_11e25ab9d61fac43c078db7835f48eae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6e8857bd1274489203d61310e486a8e9 = $(`<div id="html_6e8857bd1274489203d61310e486a8e9" style="width: 100.0%; height: 100.0%;">Điểm chính : Đại học Mỏ - Địa Chất</div>`)[0];
+                popup_11e25ab9d61fac43c078db7835f48eae.setContent(html_6e8857bd1274489203d61310e486a8e9);
+            
+        
+
+        marker_b83f40e97f76eedfdbc941a373069e88.bindPopup(popup_11e25ab9d61fac43c078db7835f48eae)
+        ;
+
+        
+    
+    
+            marker_b83f40e97f76eedfdbc941a373069e88.bindTooltip(
+                `<div>
+                     Điểm chính
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b83f40e97f76eedfdbc941a373069e88.setIcon(icon_2a35e06b26746f2376354d04b44ad95f);
+            
+    
+            var marker_cb47cbfc309eccfc7be3a47a03714d0a = L.marker(
+                [21.071993380694057, 105.77542311480931],
+                {
+}
+            ).addTo(map_83732d4034dc2543b96d750493639ab4);
+        
+    
+            var icon_f46fda98d6479c0d7cbac4582af8498d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dd6d51b3f7bae0acbe6cba4ca1720380 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5c90111d7dc6b04b503976a55617be92 = $(`<div id="html_5c90111d7dc6b04b503976a55617be92" style="width: 100.0%; height: 100.0%;">Điểm xe bus : Số </div>`)[0];
+                popup_dd6d51b3f7bae0acbe6cba4ca1720380.setContent(html_5c90111d7dc6b04b503976a55617be92);
+            
+        
+
+        marker_cb47cbfc309eccfc7be3a47a03714d0a.bindPopup(popup_dd6d51b3f7bae0acbe6cba4ca1720380)
+        ;
+
+        
+    
+    
+            marker_cb47cbfc309eccfc7be3a47a03714d0a.bindTooltip(
+                `<div>
+                     Điểm xe bus
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cb47cbfc309eccfc7be3a47a03714d0a.setIcon(icon_f46fda98d6479c0d7cbac4582af8498d);
+            
+    
+            var marker_7cf517d9c3c3e0c1b52927a696658262 = L.marker(
+                [21.07146952465235, 105.77426997700357],
+                {
+}
+            ).addTo(map_83732d4034dc2543b96d750493639ab4);
+        
+    
+            var icon_0369714380f452b1e2bf25e288c1f0d0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d84654d0567bdd88cfb8f9e491c03ca1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e11dd7d70b1e5c5281ff81680a8e7046 = $(`<div id="html_e11dd7d70b1e5c5281ff81680a8e7046" style="width: 100.0%; height: 100.0%;">Điểm xe bus : Số </div>`)[0];
+                popup_d84654d0567bdd88cfb8f9e491c03ca1.setContent(html_e11dd7d70b1e5c5281ff81680a8e7046);
+            
+        
+
+        marker_7cf517d9c3c3e0c1b52927a696658262.bindPopup(popup_d84654d0567bdd88cfb8f9e491c03ca1)
+        ;
+
+        
+    
+    
+            marker_7cf517d9c3c3e0c1b52927a696658262.bindTooltip(
+                `<div>
+                     Điểm xe bus
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7cf517d9c3c3e0c1b52927a696658262.setIcon(icon_0369714380f452b1e2bf25e288c1f0d0);
+            
+    
+            var poly_line_d54d5938acc0b9d679602d5faad3bf32 = L.polyline(
+                [[21.0722, 105.7741], [21.07146952465235, 105.77426997700357]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_83732d4034dc2543b96d750493639ab4);
+        
+    
+            poly_line_d54d5938acc0b9d679602d5faad3bf32.bindTooltip(
+                `<div>
+                     Đường ngắn nhất
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4fd18fb458b8b9a5875704f24dcbfcda = L.marker(
+                [21.07190843119104, 105.77053745200081],
+                {
+}
+            ).addTo(map_83732d4034dc2543b96d750493639ab4);
+        
+    
+            var icon_599048a2bd394b7824f527c3520a6e78 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c6bb9f08eeaff2cef37c0e7c90796a81 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_84ddc17272acbc5a7fd83959b19e93d2 = $(`<div id="html_84ddc17272acbc5a7fd83959b19e93d2" style="width: 100.0%; height: 100.0%;">Điểm xe bus : Số </div>`)[0];
+                popup_c6bb9f08eeaff2cef37c0e7c90796a81.setContent(html_84ddc17272acbc5a7fd83959b19e93d2);
+            
+        
+
+        marker_4fd18fb458b8b9a5875704f24dcbfcda.bindPopup(popup_c6bb9f08eeaff2cef37c0e7c90796a81)
+        ;
+
+        
+    
+    
+            marker_4fd18fb458b8b9a5875704f24dcbfcda.bindTooltip(
+                `<div>
+                     Điểm xe bus
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4fd18fb458b8b9a5875704f24dcbfcda.setIcon(icon_599048a2bd394b7824f527c3520a6e78);
+            
+    
+            var marker_978752ed93428032047a5be039d650cc = L.marker(
+                [21.07207833015329, 105.77719834010546],
+                {
+}
+            ).addTo(map_83732d4034dc2543b96d750493639ab4);
+        
+    
+            var icon_d37a59351c6ba1a68ffc5d9f37152655 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a5fa37e1254c4f3032d6084b01d39ada = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c8feb12bbdc52aa13a954963dc63564 = $(`<div id="html_3c8feb12bbdc52aa13a954963dc63564" style="width: 100.0%; height: 100.0%;">Điểm xe bus : Số </div>`)[0];
+                popup_a5fa37e1254c4f3032d6084b01d39ada.setContent(html_3c8feb12bbdc52aa13a954963dc63564);
+            
+        
+
+        marker_978752ed93428032047a5be039d650cc.bindPopup(popup_a5fa37e1254c4f3032d6084b01d39ada)
+        ;
+
+        
+    
+    
+            marker_978752ed93428032047a5be039d650cc.bindTooltip(
+                `<div>
+                     Điểm xe bus
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_978752ed93428032047a5be039d650cc.setIcon(icon_d37a59351c6ba1a68ffc5d9f37152655);
+            
+    
+            var marker_f7e61cebffb9459491b6b6901b92e9c5 = L.marker(
+                [21.073885626012068, 105.77714804538523],
+                {
+}
+            ).addTo(map_83732d4034dc2543b96d750493639ab4);
+        
+    
+            var icon_ff027d6b7b7d2baa2ce2f3b95ecf78b4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_973a18ab0468203da75cbec345625a63 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_73b5a45b18fca53fac84cf05e50e5a7c = $(`<div id="html_73b5a45b18fca53fac84cf05e50e5a7c" style="width: 100.0%; height: 100.0%;">Điểm xe bus : Số </div>`)[0];
+                popup_973a18ab0468203da75cbec345625a63.setContent(html_73b5a45b18fca53fac84cf05e50e5a7c);
+            
+        
+
+        marker_f7e61cebffb9459491b6b6901b92e9c5.bindPopup(popup_973a18ab0468203da75cbec345625a63)
+        ;
+
+        
+    
+    
+            marker_f7e61cebffb9459491b6b6901b92e9c5.bindTooltip(
+                `<div>
+                     Điểm xe bus
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f7e61cebffb9459491b6b6901b92e9c5.setIcon(icon_ff027d6b7b7d2baa2ce2f3b95ecf78b4);
+            
+    
+            var marker_0ea8bf1c539c5db4c85f9eb55b2eeaf5 = L.marker(
+                [21.075032425038447, 105.77743632979463],
+                {
+}
+            ).addTo(map_83732d4034dc2543b96d750493639ab4);
+        
+    
+            var icon_1a4f1afacaee56911ea7bc6cb33d27e8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b02341787d3456637bbd7840ed911d4e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_02237ac3b7ffe2488b5052ab7c2438d8 = $(`<div id="html_02237ac3b7ffe2488b5052ab7c2438d8" style="width: 100.0%; height: 100.0%;">Điểm xe bus : Số </div>`)[0];
+                popup_b02341787d3456637bbd7840ed911d4e.setContent(html_02237ac3b7ffe2488b5052ab7c2438d8);
+            
+        
+
+        marker_0ea8bf1c539c5db4c85f9eb55b2eeaf5.bindPopup(popup_b02341787d3456637bbd7840ed911d4e)
+        ;
+
+        
+    
+    
+            marker_0ea8bf1c539c5db4c85f9eb55b2eeaf5.bindTooltip(
+                `<div>
+                     Điểm xe bus
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0ea8bf1c539c5db4c85f9eb55b2eeaf5.setIcon(icon_1a4f1afacaee56911ea7bc6cb33d27e8);
+            
+    
+            var marker_59fffced8bb07282036beb2563ae0381 = L.marker(
+                [21.07170526782167, 105.77974260535186],
+                {
+}
+            ).addTo(map_83732d4034dc2543b96d750493639ab4);
+        
+    
+            var icon_68446cf9d64af4da2cffe1362ab94d0f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bb3e00648a8f5836a1426826eb997d3a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f13c38119cbab2218cb804d5d7cae0f3 = $(`<div id="html_f13c38119cbab2218cb804d5d7cae0f3" style="width: 100.0%; height: 100.0%;">Điểm xe bus : Số </div>`)[0];
+                popup_bb3e00648a8f5836a1426826eb997d3a.setContent(html_f13c38119cbab2218cb804d5d7cae0f3);
+            
+        
+
+        marker_59fffced8bb07282036beb2563ae0381.bindPopup(popup_bb3e00648a8f5836a1426826eb997d3a)
+        ;
+
+        
+    
+    
+            marker_59fffced8bb07282036beb2563ae0381.bindTooltip(
+                `<div>
+                     Điểm xe bus
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_59fffced8bb07282036beb2563ae0381.setIcon(icon_68446cf9d64af4da2cffe1362ab94d0f);
+            
+</script>
+</html>

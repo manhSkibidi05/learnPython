@@ -1,0 +1,96 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Trạm xe buýt 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.77542311480931,
+                    21.071993380694057
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Trạm xe buýt 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.77426997700357,
+                    21.07146952465235
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Trạm xe buýt 3"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.77053745200081,
+                    21.07190843119104
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Trạm xe buýt 4"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.77719834010546,
+                    21.07207833015329
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Trạm xe buýt 5"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.77714804538523,
+                    21.073885626012068
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Trạm xe buýt 6"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.77743632979463,
+                    21.075032425038447
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Trạm xe buýt 7"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.77974260535186,
+                    21.07170526782167
+                ]
+            }
+        }
+    ]
+}
