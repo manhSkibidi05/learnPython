@@ -11,7 +11,7 @@ gdf = gpd.read_file('du_lieu.json')     # -> Đọc file json định dạng geo
 gdf_filter = gdf.loc[(gdf['category'] == 'Museum') & (gdf['rating'] >= 4.6)]  # -> Lọc bảng gdf dựa vào dữ liệu thuộc tính 
 
 if isinstance(gdf_filter , gpd.GeoDataFrame) :  # -> hàm isinstance(biến , đối tượng) : giúp kiểm tra 1 biến có phải thể hiện của 1 đối tượng cụ thể không 
-    gdf_filter.to_file('bao_tang.json') # -> nếu có giúp ép kiểu biến đó và sử dụng các phương thức của đối tượng đó : hàm to_file() giúp xuất file cụ thể 
+    gdf_filter.to_file('bao_tang.json' , driver='GeoJSON') # -> nếu có giúp ép kiểu biến đó và sử dụng các phương thức của đối tượng đó : hàm to_file() giúp xuất file cụ thể 
 
 # Hiện thị các điểm bảo tảng lên bản đồ 
 center_hanoi = Point(105.81746473658592 , 21.025818006907244) # -> Tạo điểm trung tâm của bản đồ

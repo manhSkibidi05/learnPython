@@ -21,8 +21,8 @@ m = folium.Map(location=[center_humg.y , center_humg.x] , zoom_start=13 , tiles=
 
 folium.Marker(
     location=[center_humg.y , center_humg.x],
-    popup="Điểm chính : Đại học Mỏ - Địa Chất",
-    tooltip="Điểm chính",
+    popup="Điểm chính",
+    tooltip="Đại học Mỏ - Địa Chất",
     icon=folium.Icon(color="red", icon="info-sign")
 ).add_to(m)
 
@@ -32,8 +32,8 @@ for idx , row in gdf_tram_se_bus.iterrows() :
 
     folium.Marker(
         location=[lat , lon],
-        popup="Điểm xe bus : Số " ,
-        tooltip="Điểm xe bus",
+        popup="Điểm xe bus" ,
+        tooltip=f"Điểm xe bus số {idx}",
         icon=folium.Icon(color="blue", icon="info-sign")
     ).add_to(m)
 
@@ -43,7 +43,7 @@ for idx , row in gdf_tram_se_bus.iterrows() :
             color='green',
             weight=4,
             opacity=0.8,
-            tooltip="Đường ngắn nhất"
+            tooltip=f"Khoảng cách: {danh_sach_khoang_cach[idx]} m"
         ).add_to(m)
 
 m.save('diem_se_bus_gan_nhat.html')
